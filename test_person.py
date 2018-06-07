@@ -4,7 +4,7 @@ from mock import patch
 from person import Person
 
 
-@patch("data_source.introduce_myself")
+@patch("person.introduce_myself")
 def test_make_friends(mocked_introduce_function):
     greeting = "howdy!"
     mocked_introduce_function.return_value = greeting
